@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/PlaySnake.unity
+  isLoaded: 1
+  isActive: 1
