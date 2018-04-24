@@ -281,42 +281,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &577632471 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1641056382390230, guid: 38cedc8a49cd13346988b02c204b1653,
-    type: 2}
-  m_PrefabInternal: {fileID: 631447502}
---- !u!114 &577632476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 577632471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ddb7cfd5d7030f4ab415c42265a7248, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
-  TextScore: {fileID: 394663059}
-  RotateSpeed: 140
-  tailPrefab: {fileID: 1225278734850472, guid: e20ba3a05e46b9144ac4ec2bee0eff55, type: 2}
-  food: {fileID: 1254694251}
---- !u!54 &577632477
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 577632471}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &588938688
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +294,7 @@ GameObject:
   - component: {fileID: 588938690}
   m_Layer: 0
   m_Name: BorderRight
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,6 +372,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114381486562200076, guid: 38cedc8a49cd13346988b02c204b1653,
+        type: 2}
+      propertyPath: tail.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4823262186456822, guid: 38cedc8a49cd13346988b02c204b1653, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -440,10 +409,37 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 65672979656987028, guid: 38cedc8a49cd13346988b02c204b1653,
+    - target: {fileID: 114381486562200076, guid: 38cedc8a49cd13346988b02c204b1653,
         type: 2}
-      propertyPath: m_IsTrigger
-      value: 1
+      propertyPath: TextScore
+      value: 
+      objectReference: {fileID: 394663059}
+    - target: {fileID: 114381486562200076, guid: 38cedc8a49cd13346988b02c204b1653,
+        type: 2}
+      propertyPath: food
+      value: 
+      objectReference: {fileID: 1254694251}
+    - target: {fileID: 114381486562200076, guid: 38cedc8a49cd13346988b02c204b1653,
+        type: 2}
+      propertyPath: tail.Array.data[1]
+      value: 
+      objectReference: {fileID: 1225278734850472, guid: e20ba3a05e46b9144ac4ec2bee0eff55,
+        type: 2}
+    - target: {fileID: 114381486562200076, guid: 38cedc8a49cd13346988b02c204b1653,
+        type: 2}
+      propertyPath: tail.Array.data[2]
+      value: 
+      objectReference: {fileID: 1225278734850472, guid: e20ba3a05e46b9144ac4ec2bee0eff55,
+        type: 2}
+    - target: {fileID: 114381486562200076, guid: 38cedc8a49cd13346988b02c204b1653,
+        type: 2}
+      propertyPath: RotateSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114381486562200076, guid: 38cedc8a49cd13346988b02c204b1653,
+        type: 2}
+      propertyPath: Speed
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38cedc8a49cd13346988b02c204b1653, type: 2}
@@ -461,7 +457,7 @@ GameObject:
   - component: {fileID: 709051528}
   m_Layer: 0
   m_Name: BorderLeft
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -822,7 +818,7 @@ GameObject:
   - component: {fileID: 1853653558}
   m_Layer: 0
   m_Name: BorderBottom
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -968,7 +964,7 @@ GameObject:
   - component: {fileID: 2100177387}
   m_Layer: 0
   m_Name: BorderTop
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

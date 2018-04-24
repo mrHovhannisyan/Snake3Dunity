@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33411507328212948}
   - component: {fileID: 65833447446592022}
   - component: {fileID: 23516399386847200}
+  - component: {fileID: 114322703753945686}
   m_Layer: 0
   m_Name: SnakeTail
-  m_TagString: Untagged
+  m_TagString: Tail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,3 +96,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114322703753945686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1225278734850472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b76b8911480ed74db1be8f68be6983b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 1
+  tailTarget: {x: 0, y: 0, z: 0}
+  mainSnake: {fileID: 0}
+  tailObj: {fileID: 0}
